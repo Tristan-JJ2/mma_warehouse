@@ -51,16 +51,6 @@ Develop a modern data warehouse using SQL Server to consolidate sales data, enab
 
 ### BI: Analytics & Reporting (Data Analysis)
 
-
-
-Fighter Performance
-
-Fight Trends
-
-Event Statistics
-
-Historical Analysis
-
 Ranking Dynamics
 #### Objective
 Develop SQL-based analytics to deliver detailed insights into:
