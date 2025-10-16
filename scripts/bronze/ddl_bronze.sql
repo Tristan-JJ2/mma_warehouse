@@ -1,14 +1,12 @@
-/*
-===============================================================================
-DDL Script: Create Bronze Tables via Stored Procedure
-===============================================================================
-*/
-
-IF NOT EXISTS (SELECT 1 FROM sys.schemas WHERE name = 'bronze')
-    EXEC('CREATE SCHEMA bronze');
+USE [MMADataWarehouse]
+GO
+/****** Object:  StoredProcedure [bronze].[table_creating]    Script Date: 16/10/2025 23:34:35 ******/
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE OR ALTER PROCEDURE bronze.table_creating
+ALTER   PROCEDURE [bronze].[table_creating]
 AS
 BEGIN
     SET NOCOUNT ON;
@@ -22,7 +20,7 @@ BEGIN
     CREATE TABLE bronze.ufcstat_event_details (
         event_id NVARCHAR(20),
         fight_id NVARCHAR(20),
-        date DATE,
+        date NVARCHAR(50),
         location NVARCHAR(250),
         winner NVARCHAR(50),
         winner_id NVARCHAR(20)
@@ -144,7 +142,7 @@ BEGIN
         weight FLOAT,
         reach FLOAT,
         stance NVARCHAR(50),
-        dob DATE,
+        dob NVARCHAR(50),
         splm FLOAT,
         str_acc FLOAT,
         sapm FLOAT,
@@ -155,4 +153,3 @@ BEGIN
         sub_avg FLOAT
     );
 END
-GO
