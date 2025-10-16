@@ -91,6 +91,28 @@ mma-data-warehouse-project/
 ---
 
 
+## 📊 Data used
+#### UFC DATASETS [1994-2025]
+A large dataset for UFC Events, Fights, and Fighter Profiles.
+## event_details.csv
+    Contains info about event data.
+    Tells when and where the event occurred.
+    Shows how many fights occurred in that event.
+    Tells who is the winner of a particular fight in a particular event.
+
+## fight_details.csv
+
+    Contains info regrading the what happened in the fight.
+    Such as str, td, kd, shots landed on various body parts and many other details also.
+    NOTE: Does not contain who is the winner of a fight. It is available in event_details.csv file.
+    REASON: The ufcstats.com stores in that particular format. And we did not want to change the format.
+
+## fighter_details.csv
+    Contains info regrading all the fighter that has ever appeared in an UFC event.
+    Contains info about overall performance of the fighters.
+    Contains bio data of the fighters also.
+
+
 ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
