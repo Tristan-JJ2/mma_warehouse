@@ -113,6 +113,11 @@ A large dataset for UFC Events, Fights, and Fighter Profiles.
     Contains bio data of the fighters also.
 
 
+### Sports Odds API
+https://the-odds-api.com/ 
+a large dataset available through API 
+
+
 ## 🛡️ License
 
 This project is licensed under the [MIT License](LICENSE). You are free to use, modify, and share this project with proper attribution.
